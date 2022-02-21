@@ -12,15 +12,15 @@ app.post("/courses", (request, response) => {
   return response.json(["Curso 1", "Curso 2", "Curso 3", "Curso 4"]);
 });
 // Atualiza
-app.put("/courses", (request, response) => {
+app.put("/courses/:id", (request, response) => {
   return response.json(["Curso 6", "Curso 2", "Curso 3", "Curso 4"]);
 });
 // Atualização Parcial
-app.patch("/courses", (request, response) => {
+app.patch("/courses/:id", (request, response) => {
   return response.json(["Curso 6", "Curso 7", "Curso 3", "Curso 4"]);
 });
 // Deleta
-app.delete("/courses", (request, response) => {
+app.delete("/courses/:id", (request, response) => {
   return response.json(["Curso 1", "Curso 2", "Curso 4"]);
 });
 
